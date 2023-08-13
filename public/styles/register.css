@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffff;
+}
+main{
+    background-color: white;
+}
+.fondobody{
+    background-color: #EAC926;
+
+}
+header{
+    background-color: #EAC926;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    
+}
+.input-obj{
+    flex: content ;
+    flex-direction: column;
+}

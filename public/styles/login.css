@@ -28,9 +28,8 @@ header {
     
     height: 100px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    gap: 130px;
 }
 .logo {
     position: relative
@@ -146,14 +145,21 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.form-group input:hover{
+    background-color: #0022AA;
+    transition-duration: 1.5s;
+}
+
+
 .form-group input[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
-    cursor:pointer;
+    cursor:pointer; 
+    border: 2px solid #0022AA;
 }
 .form-group input[type="reset"] {
     display: block;
@@ -245,3 +251,17 @@ header {
 
 
 }   
+
+
+
+/**** animation *****/
+
+@keyframes botoncolor {
+    0%{
+        background-color: #4CAF50
+    }
+    100%{
+        background-color: #0022AA ;
+    }
+
+}

@@ -2,9 +2,15 @@ const express = require('express');
 const app = express();
 const path = require ('path');
 
-app.listen(3000,() => {
-    console.log ("servir corriendo")
-})
+// app.listen(3000,() => {
+//     console.log ("servir corriendo")
+// })
+
+const port =process.env.PORT || 3000;
+app.listen (port, ()=>console.log(`servidor Coriendo en el puerto ${port}`))
+
+
+
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
